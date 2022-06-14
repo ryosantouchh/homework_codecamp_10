@@ -1,7 +1,7 @@
-Online Codecamp 10
+### Online Codecamp 10
     
-    Kittitat Suntimak (กิตติธัช สันติมัค)
-    โจทย์ที่ทำ HTML Homework 2
+1. Kittitat Suntimak (กิตติธัช สันติมัค)
+2. โจทย์ที่ทำ HTML Homework 2
 
         1.) ให้สร้าง phonebook.html ในแบบ responsive เพื่อสร้างเป็นสมุดโทรศัพท์บน smart phone โดยส่งไฟล์ไว้ที่ github.io
 
