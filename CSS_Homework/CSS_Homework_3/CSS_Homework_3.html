@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Homework 3 Responsive Web</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+        div {
+            display: block
+        }
+
+        .boxtop {
+            padding-top: 72px;
+            padding-bottom: 130px;
+            background-color: #edf0f5;
+        }
+        
+        .boxcenter {
+            /* background-color: burlywood; */
+            padding: 20px 0px;
+            margin: 0px auto;
+            width: 980px;
+            
+        }
+
+        .boxleft {
+            display: inline-block;
+            width: 550px;
+            padding-right: 32px;
+            vertical-align: top;
+            margin-top: 100px;
+
+        }
+
+        .boxright {
+            display: inline-block;
+            width: 400px;
+        }
+
+        .loginbox {
+            display: inline-block;
+            width: 390px;
+            vertical-align: top;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 4px gray;
+            box-sizing: border-box;
+            padding: 20px 0 28px;
+            margin: 40px 0 0;
+            text-align: center;
+        }
+
+        .loginform {
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px ;
+            
+        }
+
+        .loginbutton {
+            padding: 10px 0px;
+            width: 325px;
+            font-size: 22px;
+            color: white;
+            font-weight: 800;
+            border-radius: 8px;
+            border: none;
+            background-color: rgb(74, 130, 250);
+        }
+
+        input.loginbutton:hover {
+            cursor: pointer;
+            background-color: rgb(80, 80, 255);
+        }
+
+        .inputtext {
+            padding: 10px 10px;
+            width: 325px;
+            text-align: left;
+            font-size: 19px;
+            border-radius: 8px;
+            border: 1px solid rgb(185, 185, 185);
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px 0px;
+            text-decoration: none;
+            
+        }
+
+        a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            
+        }
+
+        a:visited {
+            cursor: pointer;
+            color: blue;
+        }
+ 
+        .registeraccount {
+            padding: 10px 0px;
+            width: 200px;
+            font-size: 20px;
+            color: white;
+            font-weight: 800;
+            border-radius: 8px;
+            border: none;
+            background-color: green;
+        }
+
+        .registeraccount:hover {
+            cursor: pointer;
+            background-color: rgb(0, 189, 0);
+        }
+
+        .boxbottom {
+            /* background-color: burlywood; */
+            padding: 20px 0px 0px;
+            margin: 0px auto;
+            width: 980px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            list-style-type: none;
+            padding-top: 2px;
+            font-size: 14px;
+            
+        }
+
+        li {
+            padding-left: 10px;
+            vertical-align: top;
+        }
+
+        a.languagechange {
+            color: rgb(71, 71, 71);
+        }
+
+        .fblogo {
+            width: 320px; margin-left: -35px; margin-bottom: -20px;
+        }
+
+        @media screen and (max-width: 1075px) {
+            .boxcenter {
+                margin: 0 50px;
+                width: auto;
+                height: 450px;
+            }
+
+            .boxleft {
+                width: 350px;
+            }
+
+            .boxright {
+                float: right;
+            }
+
+            .h2response {
+                font-size: 24px;
+            }
+            
+            .boxbottom {
+                width: auto;
+            }
+
+        }
+
+        @media screen and (max-width: 900px) {
+            .boxcenter {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+
+            .boxtop {
+                text-align: center;
+                width: auto;
+                padding-top: 0px;
+                padding-bottom: 280px;
+            }
+
+            .boxleft {
+                margin: 0 auto;
+                padding-right: 0;
+            }
+
+            .boxright {
+                margin: 0 auto;
+            }
+
+           .fblogo {
+                margin: 0px 0px -20px 0px;
+           }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxtop">
+        <div class="boxcenter">
+            <div class="boxleft">
+                <img src="/CSSandBootstrap/CSS_Homework/CSS_Homework_3/pichw3/facebooklogo.svg" class="fblogo" alt="facebook logo">
+                <h2 class="h2response">Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</h2>
+            </div>
+            <div class="boxright">
+                <div class="loginbox">
+                <form action="#" class="loginform">
+                    <label for="username"></label>
+                    <input type="text" name="username" id="username" class="inputtext" placeholder="อีเมลหรือเบอร์โทรหั่น">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" class="inputtext" placeholder="รหัสผ่าน">
+                    <label for="login"></label>
+                    <input type="button" value="เข้าสู่ระบบ" class="loginbutton">
+                    <a href="#" >ลืมรหัสผ่านรึป่าวเราอ่ะ ???</a>
+                    <hr style="width: 82%; margin: 0 auto; border: 0.2px solid rgb(214, 214, 214);">
+                    <br>
+                    <input type="button" value="สมัครบัญชีใหม่" class="registeraccount">
+                </form>
+                </div>
+                <br>
+                <div style="text-align: center;"><a href="#" style="font-weight: 600;">สร้างเพจ</a> สำหรับบุคคลที่มีชื่อเสียง วงดนตรี หรือธุรกิจ</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="boxbottom">
+        <div>
+            <ul>
+                <li><a href="#" class="languagechange">ภาษาไทย</a></li>
+                <li><a href="#" class="languagechange">English(UK)</a></li>
+                <li><a href="#" class="languagechange">日本語</a></li>
+                <li><a href="#" class="languagechange">中文(简体)</a></li>
+                <li><a href="#" class="languagechange">Français (France)</a></li>
+                <li><a href="#" class="languagechange">Deutsch</a></li>
+                <li><a href="#" class="languagechange">Español</a></li>
+                <li><a href="#" class="languagechange">Italiano</a></li>
+                <li><a href="#" class="languagechange">Português (Brasil)</a></li>
+                <li><button>เพิ่มเติม</button><li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="#" class="languagechange">สมัคร</a></li>
+                <li><a href="#" class="languagechange">เข้าสู่ระบบ</a></li>
+                <li><a href="#" class="languagechange">Messenger</a></li>
+                <li><a href="#" class="languagechange">Facebook Lite</a></li>
+                <li><a href="#" class="languagechange">Watch</a></li>
+                <li><a href="#" class="languagechange">สถานที่</a></li>
+                <li><a href="#" class="languagechange">เกม</a></li>
+                <li><a href="#" class="languagechange">Marketplace</a></li>
+                <li><a href="#" class="languagechange">Instragram</a></li>
+                <li><a href="#" class="languagechange">Oculus</a></li>
+                <li><a href="#" class="languagechange">Portal</a></li>
+                <li><a href="#" class="languagechange">ผู้พัฒนา</a></li>
+                <li><a href="#" class="languagechange">เงื่อนไขการบริการ</a></li>
+                <li><a href="#" class="languagechange">สร้างโฆษณา</a></li>
+                <li><a href="#" class="languagechange">ความเป็นส่วนตัว</a></li>
+                <li><a href="#" class="languagechange">เกี่ยวกับ</a></li>
+                <li><a href="#" class="languagechange">โครงการระดมทุน</a></li>
+                <li><a href="#" class="languagechange">ความช่วยเหลือ</a></li>
+            </ul>
+
+            <br>
+
+            <ul>
+                <li class="languagechange">Facebook © 2021</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

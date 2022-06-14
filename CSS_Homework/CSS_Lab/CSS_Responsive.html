@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex lab 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* max-width: 1200px; */
+            /* ถ้าเราไม่กำหนด max-width เวลาขยายหน้าจอ มันจะขยายตามไปด้วยเลย */
+            margin: auto;
+            /* กำหนด margin เพื่อให้ body ทั้งหมดอยู่ตรงกลามหน้าจอ */
+        }
+
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header {
+            background-color: rgba(119, 0, 255, 0.295);
+            height: 10vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .navigation {
+            display: flex;
+            list-style: none;
+            margin: 0; 
+            background-color: rgba(0, 191, 255, 0.493);
+        }
+
+        .navigation a {
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: white;
+        }
+
+        .navigation a:hover {
+            background: #1565C0;
+        }
+
+        main {
+            background-color: teal;
+            background-image: url(https://picsum.photos/id/1015/1200);
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        main > * {
+            flex: 1;
+        }
+        
+        .main-l {
+            flex-basis: 100px;
+            background-color: rgba(76, 58, 233, 0.473);
+        }
+
+        .main-r {
+            flex-basis: 100px;
+            background-color: rgba(76, 58, 233, 0.473);
+        }
+
+        .main-c {
+            flex: 4 500px;
+            text-align: center;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-start;
+            /* padding: 20px; */
+        }
+
+        footer {
+            background-color: rgba(107, 0, 128, 0.274);
+            height: 10vh;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                justify-content: center;
+            }
+            .navigation {
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                height: auto;
+                /* ถ้าไม่จัด height: auto จะทำให้ Nav Bar ทะลุขอบจอบนขึ้นไป */
+                text-align: center;
+            }
+            .navigation {
+                flex-direction: column;
+            }
+
+            .navigation li {
+                border-bottom: 1px solid white ;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+    </header>
+    <main>
+        <div class="main-l">
+            <h2>News</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eius?</p>
+        </div>
+        <div class="main-c">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat odio, distinctio quia, illo impedit nihil, amet officiis est quas sit! Quo autem atque repellendus?</p>
+            <div style="margin: 60px 20px 0 60px;">
+                <h3 style="text-align: left;">Title 2</h3>
+                <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequuntur eaque laudantium obcaecati nobis, odit atque debitis sed explicabo facere.</p>
+            </div>
+        </div>
+        <div class="main-r">
+            <h2>Ads</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut inventore veniam excepturi corrupti debitis dolorum.</p>
+        </div>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>

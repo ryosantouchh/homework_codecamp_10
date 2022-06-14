@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Lab 2</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+
+        .container {
+            display: flex;
+            align-content: flex-start;
+            /* flex-wrap: wrap; */
+            flex-direction: row;
+            /* flex-flow: wrap direction; สามารถใช้แบบนี้แทน 2 บรรทัดบนได้
+            เป็นลักษณะ shorthand */
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 80vw;
+            height: 80vh; 
+            background-color: deeppink;
+            margin: 10vh auto;
+            /* overflow: hidden; ตรงนี้ใช้สำหรับเวลา content มันออกไปข้างนอกอีก
+            อาจจะใช้ overflow ก็ได้ หรือไม่ก็ควรจัดให้เรียบร้อย */
+        }
+
+        .container > * {
+            /* ในกรณีนี้ถ้าเกิดว่าเราใส่เป็น container > div แบบนี้จะ specific มากกว่า
+            ทำให้ไม่สามารถใส่ style ใน class container > div ได้เลย หากว่าต้องการแก้ไข
+            ให้ใส่เป็น .container > * แทนครับ หรือจะ set เป็น id ก็ได้ แต่ไม่นิยมใช้ */
+            background-color: lime;
+            margin: 5px;
+            padding: 20px;
+            font-size: 30px;
+            line-height: 50px;
+            
+            /* flex: 1 1 20%; อันนี้คือ shorthand*/
+
+            width: 200px;
+            /* flex-grow: 1; */
+            /* ลองใช้บรรทัดบนทั้ง 2 บรรทัด แล้วปิด flex-grow ด้านล่างใน item จะเห็นว่า
+            มันจะทำให้พื้นที่แต่ละช่องเท่ากันหมด เพราะมีค่า flex-grow : 1 เท่ากันหมด */
+        }
+
+    /* .item1 {
+            flex-grow: 1;
+        }
+
+        .item2 {
+            flex-grow: 2;
+        }
+
+        .item5 {
+            flex-grow: 1;
+        }
+    */
+
+
+        .item3 {
+            order: 1;
+        }
+
+        .item4 {
+            order: -1;
+        }
+        
+
+        /* default order : 0 */
+        /* ถ้าต้องการเรียงตาม order ให้ใช้ style="order :ตัวเลข" ใส่ใน tag style */
+
+        .item4 {
+            flex-shrink: 2;
+        }
+
+        .item2 {
+            flex-shrink: 4;
+        }
+        
+
+        /* flex-grow สามารถใช้ได้ในการแบ่งจากพื้นที่ว่างที่เหลือ default = 0 */
+        /* flex shrink : 0 ใช้ตรงข้ามกับ flex-grow ใช้เพื่อไม่ให้ตัวที่เลือกหดหรือย่อขนาด */
+        /* ในกรณี flex-shrink : ตัวเลข จะเกิดการหักพื้นที่ออกมากกว่าตัวอื่น */
+
+        /* flex-basis ใช้เหมือนเป็นตัวยืนพื้น เหมือนใช้เพื่อให้มันมีขนาดนั้นเสมอ เช่น 20% ตลอด หรือจะเป็น
+        200px ตลอดก็ได้ ปกติใช้ใน inline จะง่ายกว่า flex-basis แต่มันจะยอม shrink เมื่อโดนย่อหน้า */
+
+        /* flex shorthand คือ flex: grow shrink basis; !!!!! */
+
+        /* flex default >> grow=1 shrink=1 basis=auto */
+
+    </style>
+</head>
+<body>
+    <div class=" container">
+        <div class="item1">01</div>
+        <div class="item2">02</div>
+        <div class="item3">03</div>
+        <div class="item4">04</div>
+        <div class="item5">05</div>
+    </div>
+
+    
+</body>
+</html>
