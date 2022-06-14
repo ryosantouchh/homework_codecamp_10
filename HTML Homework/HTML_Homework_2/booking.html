@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <style>
+        fieldset {
+            display: inline;
+            margin: 0%;
+            border: 0px;
+            
+        }
+
+        legend {
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+<form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+<fieldset style="border: 1px solid black;">
+    <fieldset style="width: 100px;">
+    <legend>Flying from</legend>
+    <label for="from"></label>
+        <select name="from" id="from">
+            <option value="Bangkok">Bangkok</option>
+            <option value="Phuket">Phuket</option>
+            <option value="Khonkaen">Khonkaen</option>
+            <option value="Chiangmai">Chiangmai</option>
+            <option value="Midgard">Midgard</option>
+        </select>
+    </fieldset>
+
+    <fieldset style="width: 100px;">
+    <legend>To</legend>
+    <label for="to"></label>
+        <select name="to" id="to">
+            <option value="America">America</option>
+            <option value="Australia">Australia</option>
+            <option value="Japan">Japan</option>
+            <option value="Korea">Korea</option>
+            <option value="Asgard">Asgard</option>
+        </select>
+    </fieldset>
+
+        <br>
+
+    <fieldset style="width: 100px;">
+        <legend>Departing</legend>
+        <label for="departing"></label>
+            <input type="datetime-local" id="departing" name="departing">
+        </fieldset>
+
+    <fieldset style="width: 100px;">
+        <legend>Returning</legend>
+        <label for="returning"></label>
+            <input type="datetime-local" id="returning" name="returning">
+    </fieldset>
+
+        <br>
+
+    <fieldset style="width: 50px;">
+        <legend>Adult</legend>
+        <label for="adult"></label>
+            <select name="adult" id="adult">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+    </fieldset>
+
+    <fieldset style="width: 50px;">
+        <legend>Child</legend>
+        <label for="child"></label>
+            <select name="child" id="child">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+    </fieldset>
+
+    <fieldset style="width: 50px;">
+        <legend>Infant</legend>
+        <label for="infant"></label>
+            <select name="infant" id="infant">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+    </fieldset>
+
+    <fieldset style="width: 100px; margin-left: 75px;">
+        <legend>Currency</legend>
+        <label for="Currency"></label>
+            <select name="Currency" id="Currency">
+                <option value="THB">THB</option>
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+                <option value="JPY">JPY</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="USDT">USDT</option>
+                <option value="SOL">SOL</option>
+            </select>
+    </fieldset>
+
+    <br>
+
+    <p style="text-align: center;">
+    <input type="submit" name="Submit" id="submit">
+    </p>
+        
+</fieldset>
+</form>
+
+
+
+</body>
+</html>
