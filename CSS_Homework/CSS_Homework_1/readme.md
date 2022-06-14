@@ -1,7 +1,7 @@
-Online Codecamp 10
+### Online Codecamp 10
     
-    Kittitat Suntimak (กิตติธัช สันติมัค)
-    โจทย์ที่ทำ CSS Homework 1
+1. Kittitat Suntimak (กิตติธัช สันติมัค)
+2. โจทย์ที่ทำ CSS Homework 1
 
         - ให้เปลี่ยนสีพื้นหลังส่วน container
             - มีเงา + ขอบมนเหมือนเดิม
