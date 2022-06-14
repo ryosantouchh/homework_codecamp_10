@@ -1,11 +1,12 @@
-Online Codecamp 10
+### Online Codecamp 10
     
-Kittitat Suntimak (กิตติธัช สันติมัค)
-โจทย์ที่ทำ HTML Homework 1
+1. Kittitat Suntimak (กิตติธัช สันติมัค)
+2. โจทย์ที่ทำ HTML Homework 1
+
 
         1. สร้างหน้า index.html เป็น homepage 
             - มีภาพที่แสดงความเป็นตัวเอง และ motto ประจำตัว
-            - มี link เข้าสู่หน้า profile และ friend 
+            - มี link เข้าสู่หน้า profile และ friend    
         2. สร้างหน้า profile.html เพื่อแสดงประวัติตัวเอง 
             - มีรูปตัวเอง / avatar และข้อมูลเบื้องต้น เช่น
             - ชื่อ-นามสกุล, ชื่อเล่น, ชื่อกลุ่ม, ภูมิลำเนา, 
