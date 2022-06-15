@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advjslab2-2</title>
+</head>
+<body>
+    <script>
+
+    /*
+
+    4.18
+
+    1. ให้ทำตามคำสั่งต่อไปนี้
+        a. สร้าง object เปล่าขึ้นมา
+        b. เพิ่ม properties name เข้าไปและให้ value เป็น "Sonter"
+        c. เพิ่ม properties surname เข้าไปและให้ value เป็น "Pakorn"
+        d. เปลี่ยน properties name เป็น "Boy"
+        e. ลบ properties name ออกจาก Object
+
+    */
+
+        let obj = {};
+
+        obj.name = "Sonter";
+        obj.surname = "Pakorn";
+
+        obj["name"] = "Boy";
+        // เขียนอีกแบบ คือ obj.name = "Boy"
+
+        delete obj.name;
+
+        
+    </script>
+</body>
+</html>

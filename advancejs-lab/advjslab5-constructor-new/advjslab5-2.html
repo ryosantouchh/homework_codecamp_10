@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advjslab5-2</title>
+</head>
+<body>
+
+    <script>
+
+    /*
+
+    2. สร้าง constructor function accumulator (startingValue)
+        a. โดยที่ object ดังกล่าวควรเก็บผลรวม property ที่มี key ชื่อว่า value, ค่าเริ่มต้นของ key ชื่อ value นี้คือ startingValue
+        b. ฟังก์ชัน read() ควรอ่านค่าจาก prompt() และ เพิ่มค่าที่ใส่เข้ามาใน key ชื่อ value
+
+    *** พูดง่ายๆ ก็คือ value คือผลรวมของ prompt โดยเริ่มจาก startingValue
+
+    */
+
+        function Acc(startingValue) {
+            this.value = startingValue;
+            this.read = function() {
+                this.num = +prompt("Enter Number");
+                this.value += this.num;
+            }
+        };
+
+        let acc = new Acc(5); // startingValue จะเข้าไปเก็บเป็น acc.value = 5 และยังมี acc.read = function ใน .read ด้วย
+
+        
+        /*
+        Notes
+            ลองใช้คำสั่งดังนี้ :
+            - acc.value; // check value = 5
+            - acc.read(); // enter number = 8
+            - acc.value; // check value again = 13
+        */
+
+        /*
+        ในคลาสเขียนแบบนี้
+
+        function Acc(startingValue) {
+            this.value = startingValue;
+            this.read = function() {
+                let temp = prompt("Enter Number");
+                this.value += Number(temp);
+            }
+        };
+
+        */
+
+
+    </script>
+    
+</body>
+</html>

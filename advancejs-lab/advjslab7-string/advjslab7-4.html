@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advjslab7-4</title>
+</head>
+<body>
+    <script>
+
+    /*
+    4. เขียนฟังก์ชันที่ extractCurrencyValue(string,rate) โดยที่ฟังก์ชันดังกล่าวจะแปลง string
+    ให้เป็นค่าเงิน dollar ให้เป็น number ที่มีค่าเงินบาทเป็นเงินไทย โดยอิง rate จาก parameters ตัวที่ 2
+
+        alert ( extractCurrencyValue('$120' , 30.5) === 3660 ) // true
+    */
+
+        function extractCurrencyValue(dollar, rate) {
+            if (dollar[0] === "$") {
+                let a = dollar.slice(1);
+                a = parseFloat(a).toFixed(2);
+                a = a * rate;
+                return a;
+            } else {
+                let a = parseFloat(dollar).toFixed(2);
+                a = a * rate;
+                return a;
+            }
+        }
+        // รับได้ทั้ง $ หน้าและหลัง ของตัวหน้าต้อง check array ตำแหน่ง 0 ก่อน ที่เหลือไม่ต้องเลย
+
+        alert ( extractCurrencyValue('$120' , 30.5) === 3660 ) // true
+
+
+    </script>
+    
+</body>
+</html>

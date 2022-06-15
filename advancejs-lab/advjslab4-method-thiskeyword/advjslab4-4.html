@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advjslab4-4</title>
+</head>
+<body>
+
+    <script>
+    /*
+
+    4. ให้ object ชื่อ ladder มี method ขึ้นและลง
+
+        let ladder = {
+            step = 0,
+            up() {
+                this.step++;
+            },
+            down() {
+                this.step--;
+            },
+            showStep: function() { // shows the current step
+                alert( this.step );
+            }
+        };
+
+        โดยให้สามารถเรียก function แบบนี้ได้
+        ladder.up().up().down().showStep(); // 1
+
+
+
+    ladder.up();
+    ladder.down();
+    ladder.showStep();
+
+    โจทย์คือ
+    ต้องการให้ดัดแปลง object ของ ladder ให้สามารถเรียกใช้ function แบบนี้ได้
+
+        ladder.up().up().down().showStep(); // 1
+
+    ตอนนี้ที่ใช้ function ด้านบนไม่ได้ เพราะ ไม่ได้ return ค่าออกมาก่อน ทำให้เป็น undefined
+    เมื่อเป็น undefined จะทำให้ไม่สามารถเรียก method ตัวต่อๆไปได้ เพราะไม่มีค่าออกมาอ่านะ
+
+    อธิบายอีกทีแบบนี้
+        
+        จาก return this; เมื่อ return กลับมาได้ this = ladder
+        
+        ทำให้ทั้งก้อน < ladder.up() > ตัวหน้าสุด กลายเป็น ladder เฉยๆ
+        จากการ return ค่ากลับมา
+
+        ดังด้านล่าง
+        ladder.up().up().down();
+        ladder.up().down();
+        ladder.down();
+
+        
+    */
+
+        let ladder = {
+            step: 0, // คล้ายๆ let ตัวแปรมาตัวนึงก่อน ทำค่าเริ่มต้น = 0
+            up() {
+                this.step++;
+                return this; // this นี้คือ ladder ออกมาทั้งหมดเลย
+            },
+            down() {
+                this.step--;
+                return this;
+            },
+            showStep: function() {
+                alert( this.step );
+                return this;
+            }
+        };
+
+    </script>
+    
+</body>
+</html>

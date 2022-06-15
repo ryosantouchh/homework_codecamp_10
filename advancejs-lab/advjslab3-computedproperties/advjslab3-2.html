@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advjslab3-2</title>
+</head>
+<body>
+    <script>
+    /*
+
+    4.7
+
+    2. ให้เขียนโปรแกรมที่รับค่า key และ value ของ properties ของ object หนึ่ง โดยให้ key เป็นชื่อของผลไม้ และ value เป็นจำนวนของผลไม้ (number) โดยถ้า ผลไม้ชนิดไหนที่มีมากกว่า 1 ผล ให้เติม s ไปหลัง key นั้นด้วย
+
+    */
+
+    let key = prompt("ผลไม้ที่ต้องการ");
+    let object = {};
+
+    while (key !== "stop") {
+        let value = prompt("จำนวนผลไม้");
+        if (Number(value) > 1) {
+            key = key + "s";
+        }
+        object[key] = value;
+        key = prompt("ผลไม้ที่ต้องการ");    
+    }
+    console.log(object);
+
+    </script>
+
+
+</body>
+</html>

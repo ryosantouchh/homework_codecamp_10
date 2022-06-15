@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advjslab2-3</title>
+</head>
+<body>
+
+    <script>
+    /*
+
+    4.18
+
+    2. ให้เขียน function ชื่อ isEmpty(obj) โดยจะมี parameters เป็น obj และ function นี้จะเช็คว่า obj นี้มี properties ไหม
+        - ถ้ามีให้คืนค่า true
+        - ถ้าไม่มีให้คืนค่า false
+
+    */
+
+        function isEmpty(obj) {
+            for (let key in obj) {
+                return false
+                // for...in ถ้าสามารถดึงค่าได้จะเข้า loop for ทันที
+                // ถ้าดึงค่าไม่ได้จะหลุดจาก loop แล้วไปไปทำตัวถัดไปใน function คือ return true
+            }
+            return true
+        }
+
+
+    </script>
+    
+</body>
+</html>

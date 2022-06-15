@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advjslab4-1</title>
+</head>
+<body>
+    <script>
+    /*
+
+    1. การทำงานของ code ดังกล่าวได้ อะไรออกมา
+    
+    */
+
+        let user = {
+            name: "John",
+            go: function() { alert(this.name) }
+        } // ตรงนี้ต้องใส่ ;
+
+        (user.go)() // error เพราะไม่ได้ใส่ ; หลังจบ let
+
+    </script>
+    
+</body>
+</html>
