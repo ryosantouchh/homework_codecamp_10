@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jslab6-2</title>
+</head>
+<body>
+    <script>
+
+    // 2. code ทั้งสองอันนี้จะแสดง alert ออกมาเหมือนกันทั้งหมดหรือไม่
+
+        let i = 0;
+        while (++i < 5) {
+            alert(i);
+        } // บวกก่อนแล้วเอาที่บวกไปเทียบเงื่อนไข ผลออกมาเป็น 1 2 3 4 ลำดับ operator right to left
+
+        let a = 0;
+        while (a++ < 5) {
+            alert(a);
+        } 
+          // เทียบเงื่อนไขก่อนแล้วจึงบวกเลขออกมาให้ ผลออกมาเป็น 1 2 3 4 5
+
+        // แสดงผลไม่เหมือนกัน
+
+    </script>
+    
+</body>
+</html>

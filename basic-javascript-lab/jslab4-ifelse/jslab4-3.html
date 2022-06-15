@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jslab4-3</title>
+</head>
+<body>
+    <script>
+
+    /*
+    3.) ใช้ prompt ในการรับคะแนนมาคำนวณเกรด
+        - ถ้าคะแนน มากกว่าเท่ากับ 80 ได้ A
+        - ถ้าคะแนน อยู่ระหว่าง 70 - 79 ได้ B
+        - ถ้าคะแนน อยู่ระหว่าง 60 - 69 ได้ C
+        - ถ้าคะแนน อยู่ระหว่าง 50 - 59 ได้ D
+        - ถ้าคะแนน น้อยกว่า 50 ได้ F
+    */
+        
+
+        let score = Number(prompt("คะแนนที่ได้"));
+        let msg = "";
+
+        if (score >= 80) {
+            msg = "A"
+        } else if (score >= 70) {
+            msg = "B"
+        } else if (score >= 70) {
+            msg = "B"
+        } else if (score >= 60) {
+            msg = "C"
+        } else if (score >= 50) {
+            msg = "D"
+        } else if (score < 50) {
+            msg = "F"
+        }
+
+        alert(msg);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jslab5-3</title>
+</head>
+<body>
+    <script>
+
+    // 4.) คำสั่งไหน alert จะถูกรันบ้าง
+    
+        if (-1 || 0) alert('first'); // Run เพราะว่า -1 = true , then result = true 
+        if (-1 && 0) alert('second'); // Not Run > 0=false , result = false
+        if (null || -1 && 0) alert('third');// Not Run -1 && 0 ได้ false then go false || false = false eventually
+        
+    </script>
+</body>
+</html>

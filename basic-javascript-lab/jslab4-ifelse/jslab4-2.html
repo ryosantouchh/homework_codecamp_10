@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jslab4-2</title>
+</head>
+<body>
+    <script>
+
+    /*
+    2.) ใช้ if-else ในการเขียนถามชื่อของคุณ
+        - ถ้าตอบถูกให้แสดงคำว่า "เก่งมาก"
+        - ถ้าตอบผิดให้แสดงคำว่า "คุณไม่รู้จักชื่อฉัน"
+    */
+    
+        let name = prompt('What is your name...');
+        let msg = "";
+
+        if (name === "Kittitat") {
+            msg = "เก่งมาก"
+        } else {
+            msg = "คุณไม่รู้จักชื่อฉัน"
+        }
+        alert(msg);
+
+        /*
+        เขียนแบบ ternary operator ดังนี้
+        
+         let name = prompt('What is your name...');
+        let msg = "";
+
+        msg = (name === "Kittitat") ? "เก่งมาก" : "คุณไม่รู้จักชื่อฉัน";
+        alert(msg);
+        */
+    </script>
+</body>
+</html>

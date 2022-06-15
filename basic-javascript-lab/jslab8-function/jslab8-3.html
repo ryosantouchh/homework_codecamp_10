@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jalab8-3</title>
+</head>
+<body>
+    <script>
+
+        function draw(n) {
+            for ( let row = 0 ; row < n ; row++ ) {
+                let num = ''; // กำหนด '' จะได้ string ถ้ากำหนด 0 จะได้ number
+                for ( let column = 0 ; column < n ; column++ ) {
+                    num += ( column + 1 ) ; // เอาเลขมาเรียงกันเป็น string บวกเข้าไปทีละ 1
+                }
+                console.log(num); // log ตรงนี้เป็นของ outer for loop
+            }
+        };
+
+
+    </script>
+    
+</body>
+</html>

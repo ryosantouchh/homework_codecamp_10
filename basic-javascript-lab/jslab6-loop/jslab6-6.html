@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jslab6-6</title>
+</head>
+<body>
+
+    <script>
+
+    /*
+    6. ให้เขียนเกมส์ทายตัวเลขสำหรับเล่นสองคน โดย
+        - ให้ผู้เล่นคนแรกพิมพ์เลขใส่ใน prompt ที่อยู่ระหว่าง 1 ถึง 100 โดยไม่ให้ผู้เล่นคนที่สองรู้ว่าตัวเลขเป็นอะไร
+        - และให้ผู้เล่นคนที่สองทายเลขโดยการพิมพ์เลขใส่ใน prompt จนกว่าจะถูก ถ้าไม่ถูก จะต้องบอกด้วยว่าเลขที่ผู้เล่นคนที่สองพิมพ์เข้ามา มากกว่า หรือ น้อยกว่า คำตอบนั้น
+    */
+
+        let a = Number(prompt("ใส่ตัวเลข 1-100" , ""));
+        let b = "";
+        let round = 0;
+        while (b !== a) {
+            b = Number(prompt("ทายตัวเลขมาซิ"));
+            if (b > a && b <= 100) {
+                alert("มากไปรึป่าวนะ")
+                round++;
+                console.log(round);
+                if (round == 10) {
+                    alert("คุณแพ้แล้ว!");
+                    break
+                }
+            } else if (b < a && b <= 100) {
+                alert("น้อยไปรึป่าวนะ")
+                round++;
+                console.log(round);
+                if (round == 10) {
+                    alert("คุณแพ้แล้ว!");
+                    break
+                }
+            } else if (b > 100) {
+                alert("โปรดใส่ค่า 1-100")
+                if (round == 10) {
+                    alert("คุณแพ้แล้ว!");
+                    break
+                }
+            } else {
+                alert("ถูกต้อง");
+                break
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
